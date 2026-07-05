@@ -1,0 +1,264 @@
+2026-04-18 23:28:19,320 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-18 23:28:19,449 INFO o.a.j.JMeter: Loading user properties from: D:\apache-jmeter-5.6.3\bin\user.properties
+2026-04-18 23:28:19,476 INFO o.a.j.JMeter: Loading system properties from: D:\apache-jmeter-5.6.3\bin\system.properties
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: Version 5.6.3
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: java.version=17
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: os.name=Windows 10
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: os.arch=amd64
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: os.version=10.0
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: java.awt.headless=true
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-04-18 23:28:19,540 INFO o.a.j.JMeter: Available Processors =6
+2026-04-18 23:28:19,616 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-18 23:28:19,616 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-18 23:28:19,616 INFO o.a.j.JMeter: JMeterHome=D:\apache-jmeter-5.6.3
+2026-04-18 23:28:19,616 INFO o.a.j.JMeter: user.dir  =D:\apache-jmeter-5.6.3\bin\MobileTesting
+2026-04-18 23:28:19,616 INFO o.a.j.JMeter: PWD       =D:\apache-jmeter-5.6.3\bin\MobileTesting
+2026-04-18 23:28:20,804 INFO o.a.j.JMeter: IP: 172.17.1.137 Name: ssagwaliya FullName: ssagwaliya.newvisionsoftware.com
+2026-04-18 23:28:21,007 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810'
+2026-04-18 23:28:21,017 INFO o.a.j.s.FileServer: Default base='D:\apache-jmeter-5.6.3\bin\MobileTesting'
+2026-04-18 23:28:21,023 INFO o.a.j.s.FileServer: Set new base='D:\apache-jmeter-5.6.3\bin\MobileTesting'
+2026-04-18 23:28:21,584 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-04-18 23:28:21,821 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-04-18 23:28:21,821 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-04-18 23:28:21,831 INFO o.a.j.s.SaveService: Loading file: D:\apache-jmeter-5.6.3\bin\MobileTesting\BOC_SS_Mobile_App_Testing_R49_01.jmx
+2026-04-18 23:28:21,868 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-04-18 23:28:21,975 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-04-18 23:28:22,553 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-04-18 23:28:22,555 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-04-18 23:28:22,555 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results_20260418_232810.jtl
+2026-04-18 23:28:22,555 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: D:\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-04-18 23:28:22,584 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-04-18 23:28:22,584 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-04-18 23:28:22,601 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-04-18 23:28:22,605 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-04-18 23:28:22,792 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-18 23:28:22,802 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-18 23:28:22,802 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-18 23:28:22,802 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-04-18 23:28:22,802 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-04-18 23:28:23,241 INFO o.a.j.r.ClassFinder: Will scan jar D:\apache-jmeter-5.6.3\lib\ext\jmeter-agent-2.0.4.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-04-18 23:28:39,835 INFO o.a.j.r.ClassFinder: Will scan jar D:\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-manager-1.12.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-04-18 23:28:39,960 INFO o.a.j.r.ClassFinder: Will scan jar D:\apache-jmeter-5.6.3\lib\ext\jmeter-plugins-casutg-3.1.1.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-04-18 23:28:41,367 INFO o.a.j.JMeter: Running test (1776535121367)
+2026-04-18 23:28:41,455 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done
+2026-04-18 23:28:41,455 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done.
+2026-04-18 23:28:41,455 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,455 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,479 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-18 23:28:41,479 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done
+2026-04-18 23:28:41,479 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done.
+2026-04-18 23:28:41,479 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,479 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,497 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2026-04-18 23:28:41,497 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done
+2026-04-18 23:28:41,498 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done.
+2026-04-18 23:28:41,498 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,498 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,498 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-04-18 23:28:41,498 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-04-18 23:28:41,498 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-04-18 23:28:41,498 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-04-18 23:28:41,508 INFO o.a.j.t.JMeterThread: Thread started: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-1
+2026-04-18 23:28:41,512 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\userId.txt
+2026-04-18 23:28:41,516 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2026-04-18 23:28:41,516 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done
+2026-04-18 23:28:41,516 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done.
+2026-04-18 23:28:41,516 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,516 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,525 INFO o.a.j.t.JMeterThread: Thread started: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-1
+2026-04-18 23:28:41,526 INFO o.a.j.t.JMeterThread: Thread started: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-1
+2026-04-18 23:28:41,531 INFO o.a.j.t.JMeterThread: Thread started: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-1
+2026-04-18 23:28:41,532 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2026-04-18 23:28:41,532 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done
+2026-04-18 23:28:41,532 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done.
+2026-04-18 23:28:41,532 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,532 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,538 INFO o.a.j.t.JMeterThread: Thread started: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-1
+2026-04-18 23:28:41,542 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2026-04-18 23:28:41,543 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 6 : 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done
+2026-04-18 23:28:41,543 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done.
+2026-04-18 23:28:41,543 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-18 23:28:41,543 INFO o.a.j.t.ThreadGroup: Starting thread group... number=6 threads=5 ramp-up=1 delayedStart=false
+2026-04-18 23:28:41,548 INFO o.a.j.t.JMeterThread: Thread started: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-1
+2026-04-18 23:28:41,555 INFO o.a.j.t.ThreadGroup: Started thread group number 6
+2026-04-18 23:28:41,555 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-18 23:28:41,567 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CheckCardDetails_user.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CheckCardDetails_user.txt@662045021
+2026-04-18 23:28:41,569 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\VirtualCardTransaction_user.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\VirtualCardTransaction_user.txt@297031141
+2026-04-18 23:28:41,572 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\SpendAnalysis_user.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\SpendAnalysis_user.txt@438897070
+2026-04-18 23:28:41,572 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CardActivation_And_Registration.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CardActivation_And_Registration.txt@1754087707
+2026-04-18 23:28:41,572 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\UpdateContactDetails_user.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\UpdateContactDetails_user.txt@1083615749
+2026-04-18 23:28:41,573 INFO o.a.j.s.FileServer: Stored: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CreateVirtualCard_user.txt Alias: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CreateVirtualCard_user.txt@1452355939
+2026-04-18 23:28:41,628 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ssagwaliya
+2026-04-18 23:28:41,719 INFO o.a.j.t.JMeterThread: Thread started: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-2
+2026-04-18 23:28:41,730 INFO o.a.j.t.JMeterThread: Thread started: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-2
+2026-04-18 23:28:41,732 INFO o.a.j.t.JMeterThread: Thread started: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-2
+2026-04-18 23:28:41,733 INFO o.a.j.t.JMeterThread: Thread started: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-2
+2026-04-18 23:28:41,745 INFO o.a.j.t.JMeterThread: Thread started: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-2
+2026-04-18 23:28:41,750 INFO o.a.j.t.JMeterThread: Thread started: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-2
+2026-04-18 23:28:41,864 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-04-18 23:28:41,908 INFO o.a.j.t.JMeterThread: Thread started: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-3
+2026-04-18 23:28:41,915 INFO o.a.j.t.JMeterThread: Thread started: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-3
+2026-04-18 23:28:41,925 INFO o.a.j.t.JMeterThread: Thread started: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-3
+2026-04-18 23:28:41,925 INFO o.a.j.t.JMeterThread: Thread started: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-3
+2026-04-18 23:28:41,945 INFO o.a.j.t.JMeterThread: Thread started: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-3
+2026-04-18 23:28:41,949 INFO o.a.j.t.JMeterThread: Thread started: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-3
+2026-04-18 23:28:42,101 INFO o.a.j.t.JMeterThread: Thread started: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-4
+2026-04-18 23:28:42,118 INFO o.a.j.t.JMeterThread: Thread started: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-4
+2026-04-18 23:28:42,126 INFO o.a.j.t.JMeterThread: Thread started: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-4
+2026-04-18 23:28:42,129 INFO o.a.j.t.JMeterThread: Thread started: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-4
+2026-04-18 23:28:42,140 INFO o.a.j.t.JMeterThread: Thread started: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-4
+2026-04-18 23:28:42,150 INFO o.a.j.t.JMeterThread: Thread started: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-4
+2026-04-18 23:28:42,200 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-04-18 23:28:42,219 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-04-18 23:28:42,219 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-04-18 23:28:42,304 INFO o.a.j.t.JMeterThread: Thread started: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-5
+2026-04-18 23:28:42,315 INFO o.a.j.t.JMeterThread: Thread started: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-5
+2026-04-18 23:28:42,323 INFO o.a.j.t.JMeterThread: Thread started: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-5
+2026-04-18 23:28:42,326 INFO o.a.j.t.JMeterThread: Thread started: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-5
+2026-04-18 23:28:42,338 INFO o.a.j.t.JMeterThread: Thread started: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-5
+2026-04-18 23:28:42,352 INFO o.a.j.t.JMeterThread: Thread started: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-5
+2026-04-18 23:28:42,662 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-04-18 23:28:42,678 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-04-18 23:28:42,678 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-04-18 23:29:26,178 INFO o.a.j.t.JMeterThread: Thread is done: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-2
+2026-04-18 23:29:26,178 INFO o.a.j.t.JMeterThread: Thread finished: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-2
+2026-04-18 23:29:26,231 INFO o.a.j.t.JMeterThread: Thread is done: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-5
+2026-04-18 23:29:26,231 INFO o.a.j.t.JMeterThread: Thread finished: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-5
+2026-04-18 23:29:26,994 INFO o.a.j.t.JMeterThread: Thread is done: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-4
+2026-04-18 23:29:26,994 INFO o.a.j.t.JMeterThread: Thread finished: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-4
+2026-04-18 23:29:27,241 INFO o.a.j.t.JMeterThread: Thread is done: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-1
+2026-04-18 23:29:27,241 INFO o.a.j.t.JMeterThread: Thread finished: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-1
+2026-04-18 23:29:27,241 INFO o.a.j.t.JMeterThread: Thread is done: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-3
+2026-04-18 23:29:27,241 INFO o.a.j.t.JMeterThread: Thread finished: 04_IOPERF_Credit_Mobile_App_Create_Virtual_Card----Done 4-3
+2026-04-18 23:30:13,023 INFO o.a.j.t.JMeterThread: Thread is done: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-3
+2026-04-18 23:30:13,023 INFO o.a.j.t.JMeterThread: Thread finished: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-3
+2026-04-18 23:30:13,038 INFO o.a.j.t.JMeterThread: Thread is done: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-5
+2026-04-18 23:30:13,038 INFO o.a.j.t.JMeterThread: Thread finished: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-5
+2026-04-18 23:30:13,257 INFO o.a.j.t.JMeterThread: Thread is done: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-4
+2026-04-18 23:30:13,257 INFO o.a.j.t.JMeterThread: Thread finished: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-4
+2026-04-18 23:30:13,350 INFO o.a.j.t.JMeterThread: Thread is done: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-2
+2026-04-18 23:30:13,350 INFO o.a.j.t.JMeterThread: Thread finished: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-2
+2026-04-18 23:30:13,476 INFO o.a.j.t.JMeterThread: Thread is done: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-1
+2026-04-18 23:30:13,476 INFO o.a.j.t.JMeterThread: Thread finished: 05_IOPERF_Credit_Mobile_App_Card_Activation_&_Registration------Done 5-1
+2026-04-18 23:33:41,466 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-1
+2026-04-18 23:33:41,466 INFO o.a.j.t.JMeterThread: Thread finished: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-1
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-2
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-4
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-1
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-3
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Thread finished: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-4
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Thread finished: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-1
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Thread finished: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-2
+2026-04-18 23:33:41,497 INFO o.a.j.t.JMeterThread: Thread finished: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-3
+2026-04-18 23:33:41,513 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-1
+2026-04-18 23:33:41,513 INFO o.a.j.t.JMeterThread: Thread finished: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-1
+2026-04-18 23:33:41,514 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-4
+2026-04-18 23:33:41,514 INFO o.a.j.t.JMeterThread: Thread finished: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-4
+2026-04-18 23:33:41,514 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-5
+2026-04-18 23:33:41,514 INFO o.a.j.t.JMeterThread: Thread finished: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-5
+2026-04-18 23:33:41,531 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-2
+2026-04-18 23:33:41,531 INFO o.a.j.t.JMeterThread: Thread finished: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-2
+2026-04-18 23:33:41,538 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-4
+2026-04-18 23:33:41,538 INFO o.a.j.t.JMeterThread: Thread finished: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-4
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-1
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Thread finished: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-1
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-5
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Thread finished: 02_IOPERF_Credit_Mobile_App_Update_Contact_Details---Done 2-5
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-5
+2026-04-18 23:33:41,560 INFO o.a.j.t.JMeterThread: Thread finished: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-5
+2026-04-18 23:33:41,580 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-2
+2026-04-18 23:33:41,580 INFO o.a.j.t.JMeterThread: Thread finished: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-2
+2026-04-18 23:33:41,609 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-4
+2026-04-18 23:33:41,609 INFO o.a.j.t.JMeterThread: Thread finished: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-4
+2026-04-18 23:33:41,917 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-3
+2026-04-18 23:33:41,917 INFO o.a.j.t.JMeterThread: Thread finished: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-3
+2026-04-18 23:33:42,060 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-2
+2026-04-18 23:33:42,060 INFO o.a.j.t.JMeterThread: Thread finished: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-2
+2026-04-18 23:33:42,183 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-3
+2026-04-18 23:33:42,183 INFO o.a.j.t.JMeterThread: Thread finished: 06_IOPERF_Credit_Mobile_App_Spend_Analysis---Done 6-3
+2026-04-18 23:33:42,189 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-5
+2026-04-18 23:33:42,191 INFO o.a.j.t.JMeterThread: Thread finished: 01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done 1-5
+2026-04-18 23:33:42,216 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-3
+2026-04-18 23:33:42,216 INFO o.a.j.t.JMeterThread: Thread finished: 03_IOPERF_Credit_Mobile_App_Check_Virtual_Card_Transaction--------Done 3-3
+2026-04-18 23:33:42,216 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\UpdateContactDetails_user.txt@1083615749
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\userId.txt
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CreateVirtualCard_user.txt@1452355939
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CardActivation_And_Registration.txt@1754087707
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\CheckCardDetails_user.txt@662045021
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\VirtualCardTransaction_user.txt@297031141
+2026-04-18 23:33:42,216 INFO o.a.j.s.FileServer: Close: D:\apache-jmeter-5.6.3\bin\MobileTesting\TestDataPath\SpendAnalysis_user.txt@438897070
+2026-04-18 23:33:42,318 INFO o.a.j.r.Summariser: summary =     13 in 00:05:01 =    0.0/s Avg:  1173 Min:    95 Max:  2265 Err:     0 (0.00%)
+2026-04-18 23:33:42,318 INFO o.a.j.JMeter: Generating Dashboard
+2026-04-18 23:33:42,318 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-04-18 23:33:42,652 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-04-18 23:33:43,672 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-04-18 23:33:43,672 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-04-18 23:33:43,674 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-04-18 23:33:43,674 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-04-18 23:33:43,685 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-04-18 23:33:43,810 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-04-18 23:33:43,810 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-04-18 23:33:43,810 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-04-18 23:33:44,404 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-04-18 23:33:44,915 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-04-18 23:33:44,918 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-04-18 23:33:44,918 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-04-18 23:33:45,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-04-18 23:33:45,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 126322 samples
+2026-04-18 23:33:45,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-04-18 23:33:45,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-04-18 23:33:45,922 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-04-18 23:33:45,932 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-04-18 23:33:45,934 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-04-18 23:33:45,935 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 306765 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 61353 samples
+2026-04-18 23:33:45,944 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 20451 samples
+2026-04-18 23:33:45,949 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 20451 samples produced in 3s 255 ms on channel 0
+2026-04-18 23:33:45,949 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-04-18 23:33:46,357 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-04-18 23:33:46,357 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-04-18 23:33:46,357 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-04-18 23:33:46,357 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-04-18 23:33:46,357 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810\statistics.json
+2026-04-18 23:33:46,702 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-04-18 23:33:46,711 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810
+2026-04-18 23:33:46,910 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810, creating folder structure
+2026-04-18 23:33:46,940 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'D:\apache-jmeter-5.6.3\bin\report-template' to 'D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810', got message: D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810, found non empty folder with following content [D:\apache-jmeter-5.6.3\bin\MobileTesting\report_20260418_232810\statistics.json], will be ignored
+2026-04-18 23:33:48,801 INFO o.a.j.JMeter: Dashboard generated
