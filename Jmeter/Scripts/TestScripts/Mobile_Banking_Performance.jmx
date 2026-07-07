@@ -201,10 +201,10 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding"></stringProp>
-        <stringProp name="filename">${TestDataPath}\userId.txt</stringProp>
+        <stringProp name="filename">${TestDataPath}/userId.txt</stringProp>
         <boolProp name="ignoreFirstLine">false</boolProp>
         <boolProp name="quotedData">false</boolProp>
         <boolProp name="recycle">true</boolProp>
@@ -10323,7 +10323,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">${TestDataPath}\SpendAnalysis_user.txt</stringProp>
+          <stringProp name="filename">${TestDataPath}/SpendAnalysis_user.txt</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">true</boolProp>
