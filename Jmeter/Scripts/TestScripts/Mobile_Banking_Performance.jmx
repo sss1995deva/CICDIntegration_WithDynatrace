@@ -5,9 +5,11 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
           <elementProp name="scheme" elementType="Argument">
             <stringProp name="Argument.name">scheme</stringProp>
@@ -16,7 +18,7 @@
           </elementProp>
           <elementProp name="TestDataPath" elementType="Argument">
             <stringProp name="Argument.name">TestDataPath</stringProp>
-            <stringProp name="Argument.value">Scripts\TestData</stringProp>
+            <stringProp name="Argument.value">Scripts/TestData</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="toDate" elementType="Argument">
@@ -31,13 +33,13 @@
           </elementProp>
           <elementProp name="LogsPath" elementType="Argument">
             <stringProp name="Argument.name">LogsPath</stringProp>
-            <stringProp name="Argument.value">Scripts\Logs</stringProp>
+            <stringProp name="Argument.value">Scripts/Logs</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="false">
         <collectionProp name="Arguments.arguments">
           <elementProp name="scheme" elementType="Argument">
             <stringProp name="Argument.name">scheme</stringProp>
@@ -67,7 +69,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <stringProp name="HTTPSampler.domain">www.example.com</stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -82,7 +84,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">true</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -119,7 +121,7 @@
         <stringProp name="filename">${LogsPath}\3.1_VRT_Error_${__time(yy-MM-dd-HH-mm)}.csv</stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -157,7 +159,7 @@
         <boolProp name="ResultCollector.success_only_logging">true</boolProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -231,7 +233,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding"></stringProp>
         <stringProp name="filename">${TestDataPath}\userId.txt</stringProp>
@@ -243,14 +245,14 @@
         <stringProp name="variableNames">username</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="Test Fragment" enabled="true"/>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Launch BOC APP">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Launch BOC APP" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/miocreditperf/CoreCardServices/CoreCardServices.svc/api/PreLoginTokenSS">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/miocreditperf/CoreCardServices/CoreCardServices.svc/api/PreLoginTokenSS" enabled="true">
             <stringProp name="HTTPSampler.domain">isccoremoney.corecard.in</stringProp>
             <stringProp name="HTTPSampler.port">443</stringProp>
             <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
@@ -581,7 +583,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Enter User Name Password Click On Sign in Button">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Enter User Name Password Click On Sign in Button" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -1771,7 +1773,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Select Virtual Card">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Select Virtual Card" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -2268,7 +2270,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Click On Back Button Then Click On More Button For Then Sign Out">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Click On Back Button Then Click On More Button For Then Sign Out" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -10350,7 +10352,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">${TestDataPath}\SpendAnalysis_user.txt</stringProp>
@@ -10362,7 +10364,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           <stringProp name="variableNames">username</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -12107,7 +12109,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Launch BOC APP">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Launch BOC APP" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -13040,7 +13042,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
         </ModuleController>
         <hashTree/>
       </hashTree>
-      <com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup guiclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroupGui" testclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup" testname="01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done">
+      <com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup guiclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroupGui" testclass="com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup" testname="01_IOPERF_Credit_Mobile_App_Check_Card_Details----Done" enabled="true">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <stringProp name="TargetLevel">10</stringProp>
@@ -13054,7 +13056,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
         <stringProp name="Unit">S</stringProp>
       </com.blazemeter.jmeter.threads.arrivals.ArrivalsThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">${TestDataPath}\CheckCardDetails_user.txt</stringProp>
@@ -13066,7 +13068,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           <stringProp name="variableNames">username</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Launch BOC APP">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Launch BOC APP" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -13075,7 +13077,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Enter User Name Password Click On Sign in Button">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Enter User Name Password Click On Sign in Button" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -13090,7 +13092,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           <stringProp name="ActionProcessor.duration">${ThinkTime}</stringProp>
         </TestAction>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Select Virtual Card">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Select Virtual Card" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -13105,7 +13107,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           <stringProp name="ActionProcessor.duration">${ThinkTime}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01_01_Flip The Virtaul Card Then Click Toggle Button of Card Number">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01_01_Flip The Virtaul Card Then Click Toggle Button of Card Number" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -13174,7 +13176,7 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
           <stringProp name="ActionProcessor.duration">${ThinkTime}</stringProp>
         </TestAction>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01_02_Toggle The CVV button">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="01_02_Toggle The CVV button" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -13237,13 +13239,13 @@ vars.put(&quot;yearToDate&quot;, sdf.format(yearEnd.getTime()))</stringProp>
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="thinktime">
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="thinktime" enabled="true">
           <intProp name="ActionProcessor.action">1</intProp>
           <intProp name="ActionProcessor.target">0</intProp>
           <stringProp name="ActionProcessor.duration">${ThinkTime}</stringProp>
         </TestAction>
         <hashTree/>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Click On Back Button Then Click On More Button For Then Sign Out">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Click On Back Button Then Click On More Button For Then Sign Out" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
