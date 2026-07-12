@@ -13,7 +13,7 @@ def prepareWorkspace() {
 
 def runJMeter(def test) {
 
-    echo "Executing JMeter Script : ${jmxFile}"
+    echo "Executing JMeter Script : ${test.name}"
 
     sh """
     cd Jmeter
