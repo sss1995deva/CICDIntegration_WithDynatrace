@@ -114,7 +114,7 @@ def prepareTestArtifacts(def tests) {
 	
 	test.resultRoot   = "Scripts/Results/${env.BUILD_NUMBER}"
 	test.resultFile   = "${test.resultRoot}/${test.name}.jtl"
-	test.reportFolder = "${test.resultRoot}/${test.name}_HTML
+	test.reportFolder = "${test.resultRoot}/${test.name}.HTML
 	test.zipFile      = "${test.resultRoot}/${test.name}.zip"
 	
     }
