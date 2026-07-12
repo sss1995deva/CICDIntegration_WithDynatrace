@@ -7,7 +7,7 @@ def prepareWorkspace() {
     echo "======================================"
 
     sh """
-    mkdir -p Jmeter/Scripts/Results/${env.BUILD_NUMBER}
+    mkdir -p Jmeter/Scripts/Results/BuldNumber_${env.BUILD_NUMBER}
     """
 }
 
@@ -112,7 +112,7 @@ def prepareTestArtifacts(def tests) {
 
     tests.each { test ->
 	
-	test.resultRoot   = "Scripts/Results/${env.BUILD_NUMBER}"
+	test.resultRoot   = "Scripts/Results/BuldNumber_${env.BUILD_NUMBER}"
 	test.resultFile   = "${test.resultRoot}/${test.name}.jtl"
 	test.reportFolder = "${test.resultRoot}/${test.name}_HTML"
 	test.zipFile      = "${test.resultRoot}/${test.name}.zip"
