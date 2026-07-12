@@ -105,10 +105,8 @@ def executeSequential(def tests) {
 
         echo "Executing : ${test.name}"
 
-        runJMeter(
-            test.script,
-            test.resultFile
-        )
+	runJMeter(test)
+
     }
 }
 
