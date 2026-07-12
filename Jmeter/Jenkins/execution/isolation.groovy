@@ -6,23 +6,35 @@ def execute() {
 
     def tests = engine.readTestConfiguration(params.TEST_TYPE)
 
-    tests.each { test ->
-	 test.resultFile   = "Scripts/Results/${test.name}.jtl"
-         test.reportFolder = "Scripts/Results/${test.name}_HTML"
-         test.zipFile      = "Scripts/Results/${test.name}.zip"
+    def branches = [:]
 
+tests.each { test ->
 
-        echo "Executing : ${test.name}"	
+    branches[test.name] = {
+
+        test.resultFile   = "Scripts/Results/${test.name}.jtl"
+        test.reportFolder = "Scripts/Results/${test.name}_HTML"
+        test.zipFile      = "Scripts/Results/${test.name}.zip"
+
+        echo "Executing : ${test.name}"
 
         engine.runJMeter(
             test.script,
-            "Scripts/Results/${test.name}.jtl"
+            test.resultFile
         )
-     engine.generateHtml(
-        resultFile,
-        reportFolder
-    )
+
+        engine.generateHtml(
+            test.resultFile,
+            test.reportFolder
+        )
+
+        engine.zipReport(
+            test.reportFolder,
+            test.zipFile
+        )
     }
+}
+
 }
 
 return this
