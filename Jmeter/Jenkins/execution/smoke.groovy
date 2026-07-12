@@ -2,14 +2,19 @@ def execute() {
 
     def engine = load 'Jmeter/Jenkins/executionEngine.groovy'
 
-    engine.prepareWorkspace()
+    def tests = engine.readTestConfiguration(params.TEST_TYPE)
 
-    engine.runJMeter(
-        "Scripts/TestScripts/Facebook.jmx",
-        "Scripts/Results/results.jtl"
-    )
+    echo "Loaded Configuration:"
 
-    echo "========== SMOKE STRATEGY =========="
+    tests.each {
+
+        echo "--------------------------------"
+
+        echo "Name      : ${it.name}"
+        echo "Script    : ${it.script}"
+        echo "Duration  : ${it.duration}"
+        echo "Users     : ${it.users}"
+    }
 }
 
 return this
