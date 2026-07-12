@@ -26,6 +26,7 @@ tests.each { test ->
      (
 	 test.reportFolder,
         test.zipFile
+)
     }
 }
 
