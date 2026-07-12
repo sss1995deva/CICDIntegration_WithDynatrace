@@ -1,8 +1,13 @@
 def execute() {
 
-    def common = load 'Jmeter/Jenkins/common.groovy'
+    def engine = load 'Jmeter/Jenkins/executionEngine.groovy'
 
-    common.prepareWorkspace()
+    engine.prepareWorkspace()
+
+    engine.runJMeter(
+        "Scripts/TestScripts/Mobile_Banking_Performance.jmx",
+        "Scripts/Results/results.jtl"
+    )
 
     echo "========== SMOKE STRATEGY =========="
 }
