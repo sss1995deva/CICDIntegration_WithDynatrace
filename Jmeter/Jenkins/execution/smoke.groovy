@@ -4,12 +4,13 @@ def execute() {
 
     def tests = engine.readTestConfiguration(params.TEST_TYPE)
 
-    tests.each { test ->
-        echo "Name     : ${test.name}"
-        echo "Script   : ${test.script}"
-        echo "Duration : ${test.duration}"
-        echo "Users    : ${test.users}"
-    }
+	tests.each { test ->
+
+    engine.runJMeter(
+        test.script,
+        "Scripts/Results/${test.name}.jtl"
+    )
+}
 }
 
 return this
