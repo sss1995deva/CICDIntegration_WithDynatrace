@@ -4,16 +4,13 @@ def execute() {
 
     def tests = engine.readTestConfiguration(params.TEST_TYPE)
 
-    echo "Loaded Configuration:"
+    tests.each { test ->
 
-    tests.each {
-
-        echo "--------------------------------"
-
-        echo "Name      : ${it.name}"
-        echo "Script    : ${it.script}"
-        echo "Duration  : ${it.duration}"
-        echo "Users     : ${it.users}"
+        echo "-----------------------------"
+        echo "Name     : ${test.name}"
+        echo "Script   : ${test.script}"
+        echo "Duration : ${test.duration}"
+        echo "Users    : ${test.users}"
     }
 }
 
