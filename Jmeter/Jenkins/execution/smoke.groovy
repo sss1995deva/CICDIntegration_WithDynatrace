@@ -5,7 +5,7 @@ def execute() {
     engine.prepareWorkspace()
 
     engine.runJMeter(
-        "Scripts/TestScripts/Mobile_Banking_Performance.jmx",
+        "Scripts/TestScripts/Facebook.jmx",
         "Scripts/Results/results.jtl"
     )
 
