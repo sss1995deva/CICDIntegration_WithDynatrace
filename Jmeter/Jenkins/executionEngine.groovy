@@ -34,27 +34,11 @@ def readTestConfiguration(String testType) {
 
    def props = readProperties file: 'Jmeter/Config/test-config.properties'
 
-    def testList = props.getProperty(testType)
+   def config = readFile('Jmeter/Config/test-config.properties')
 
-    if (!testList) {
-        error "No configuration found for ${testType}"
-    }
+   echo config	
 
-    def tests = []
-
-    testList.split(",").each { name ->
-
-        name = name.trim()
-
-        tests << [
-            name     : name,
-            script   : props.getProperty("${name}_SCRIPT"),
-            duration : props.getProperty("${name}_DURATION"),
-            users    : props.getProperty("${name}_USERS")
-        ]
-    }
-
-    return tests
+    
 }
 
 return this
