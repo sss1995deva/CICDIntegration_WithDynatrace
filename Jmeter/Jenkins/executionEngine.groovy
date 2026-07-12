@@ -7,22 +7,27 @@ def prepareWorkspace() {
     echo "======================================"
 
     sh """
-    mkdir -p Jmeter/Scripts/Results/BuldNumber_${env.BUILD_NUMBER}
+    mkdir -p Jmeter/Scripts/Results/BuildNumber_${env.BUILD_NUMBER}
     """
 }
 
-def runJMeter(String jmxFile, String resultFile) {
+def runJMeter(def test) {
 
     echo "Executing JMeter Script : ${jmxFile}"
 
     sh """
-        cd Jmeter
+    cd Jmeter
 
-        jmeter \
-        -n \
-        -t ${jmxFile} \
-        -l ${resultFile} \
-        -j Scripts/Results/jmeter_execution.log
+    jmeter \
+    -n \
+    -t ${test.script} \
+    -l ${test.resultFile} \
+    -Jusers=${test.users} \
+    -Jduration=${test.duration} \
+    -JrampUp=${test.rampUp} \
+    -Jloops=${test.loops} \
+    -Jenv=${test.env} \
+    -j Scripts/Results/jmeter_execution.log
     """
 }
 
@@ -64,11 +69,14 @@ def readTestConfiguration(String testType) {
         name = name.trim()
 
         tests << [
-            name     : name,
-            script   : props["${name}_SCRIPT"],
-            duration : props["${name}_DURATION"],
-            users    : props["${name}_USERS"]
-        ]
+    name      : name,
+    script    : props["${name}_SCRIPT"],
+    users     : props["${name}_USERS"],
+    duration  : props["${name}_DURATION"],
+    rampUp    : props["${name}_RAMPUP"],
+    loops     : props["${name}_LOOPS"],
+    env       : props["${name}_ENV"]
+]
     }
 
     return tests
@@ -84,10 +92,7 @@ def executeParallel(def tests) {
 
             echo "Executing : ${test.name}"
 
-            runJMeter(
-                test.script,
-                test.resultFile
-            )
+            runJMeter(test)
         }
     }
 
@@ -112,7 +117,7 @@ def prepareTestArtifacts(def tests) {
 
     tests.each { test ->
 	
-	test.resultRoot   = "Scripts/Results/BuldNumber_${env.BUILD_NUMBER}"
+	test.resultRoot   = "Scripts/Results/BuildNumber_${env.BUILD_NUMBER}"
 	test.resultFile   = "${test.resultRoot}/${test.name}.jtl"
 	test.reportFolder = "${test.resultRoot}/${test.name}_HTML"
 	test.zipFile      = "${test.resultRoot}/${test.name}.zip"
