@@ -32,7 +32,6 @@ def readTestConfiguration(String testType) {
 
     echo "Loading Test Configuration..."
 
-   def props = readProperties file: 'Jmeter/Config/test-config.properties'
 
    def config = readFile('Jmeter/Config/test-config.properties')
 
