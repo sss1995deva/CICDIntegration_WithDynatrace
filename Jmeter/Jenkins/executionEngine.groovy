@@ -6,9 +6,9 @@ def prepareWorkspace() {
     echo "Preparing Execution Workspace..."
     echo "======================================"
 
-    sh '''        
-        mkdir -p Jmeter/Scripts/Results/${env.BUILD_NUMBER}
-    '''
+    sh """
+    mkdir -p Jmeter/Scripts/Results/${env.BUILD_NUMBER}
+    """
 }
 
 def runJMeter(String jmxFile, String resultFile) {
