@@ -36,21 +36,20 @@ def readTestConfiguration(String testType) {
 
     def props = [:]
 
-    config.eachLine { line ->
+config.split('\n').each { line ->
 
-        line = line.trim()
+    line = line.trim()
 
-        // Skip comments and blank lines
-        if (!line || line.startsWith("#")) {
-            return
-        }
-
-        def parts = line.split("=", 2)
-
-        if (parts.size() == 2) {
-            props[parts[0].trim()] = parts[1].trim()
-        }
+    if (!line || line.startsWith("#")) {
+        return
     }
+
+    def parts = line.split("=",2)
+
+    if(parts.size()==2){
+        props[parts[0].trim()] = parts[1].trim()
+    }
+}
 
     def testList = props[testType]
 
