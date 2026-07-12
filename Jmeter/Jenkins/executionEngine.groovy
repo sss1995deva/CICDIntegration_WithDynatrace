@@ -76,6 +76,40 @@ def readTestConfiguration(String testType) {
     return tests
 }
 
+def executeParallel(def tests) {
+
+    def branches = [:]
+
+    tests.each { test ->
+
+        branches[test.name] = {
+
+            echo "Executing : ${test.name}"
+
+            runJMeter(
+                test.script,
+                test.resultFile
+            )
+        }
+    }
+
+    parallel branches
+}
+
+def executeSequential(def tests) {
+
+    tests.each { test ->
+
+        echo "Executing : ${test.name}"
+
+        runJMeter(
+            test.script,
+            test.resultFile
+        )
+    }
+}
+
+
 def prepareTestArtifacts(def tests) {
 
     tests.each { test ->
@@ -85,6 +119,7 @@ def prepareTestArtifacts(def tests) {
         test.zipFile      = "Scripts/Results/${test.name}.zip"
     }
 }
+
 
 def generateHtml(String resultFile, String reportFolder) {
 
