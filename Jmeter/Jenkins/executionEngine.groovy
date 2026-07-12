@@ -124,8 +124,7 @@ def generateReports(def tests) {
 
     tests.each { test ->
 
-       if (fileExists("Jmeter/${test.resultFile}") &&
-    sh(script: "test -s Jmeter/${test.resultFile}", returnStatus: true) == 0)) {
+       if(fileExists("Jmeter/${test.resultFile}") && sh(script: "test -s Jmeter/${test.resultFile}", returnStatus: true) == 0) {
 
             generateHtml(
                 test.resultFile,
