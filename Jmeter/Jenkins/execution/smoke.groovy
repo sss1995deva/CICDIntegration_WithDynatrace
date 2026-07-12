@@ -6,7 +6,11 @@ def execute() {
 
     def tests = engine.readTestConfiguration(params.TEST_TYPE)
 
-    tests.each { test ->
+    def branches = [:]
+
+tests.each { test ->
+
+    branches[test.name] = {
 
         echo "Executing : ${test.name}"
 
@@ -15,6 +19,9 @@ def execute() {
             "Scripts/Results/${test.name}.jtl"
         )
     }
+}
+
+parallel branches
 }
 
 return this
