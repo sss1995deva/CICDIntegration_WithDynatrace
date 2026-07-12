@@ -1,23 +1,15 @@
-prepareWorkspace()
+def prepareWorkspace() {
 
-runJMeter(
-    String jmxFile,
-    String resultFile
-)
+    echo "======================================"
+    echo "Preparing Execution Workspace..."
+    echo "======================================"
 
-generateHtml(
-    String resultFile,
-    String reportFolder
-)
-
-zipReport(
-    String reportFolder,
-    String zipName
-)
-
-archiveReport(
-    String zipName
-)
+    sh '''
+        rm -rf Jmeter/Scripts/Results/HTMLReport
+        rm -f Jmeter/Scripts/Results/results.jtl
+        mkdir -p Jmeter/Scripts/Results
+    '''
+}
 
 def runJMeter(String jmxFile, String resultFile) {
 
