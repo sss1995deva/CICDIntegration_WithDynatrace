@@ -6,10 +6,8 @@ def prepareWorkspace() {
     echo "Preparing Execution Workspace..."
     echo "======================================"
 
-    sh '''
-        rm -rf Jmeter/Scripts/Results/HTMLReport
-        rm -f Jmeter/Scripts/Results/results.jtl
-        mkdir -p Jmeter/Scripts/Results
+    sh '''        
+        mkdir -p Jmeter/Scripts/Results/${env.BUILD_NUMBER}
     '''
 }
 
@@ -113,13 +111,51 @@ def executeSequential(def tests) {
 def prepareTestArtifacts(def tests) {
 
     tests.each { test ->
-
-        test.resultFile   = "Scripts/Results/${test.name}.jtl"
-        test.reportFolder = "Scripts/Results/${test.name}_HTML"
-        test.zipFile      = "Scripts/Results/${test.name}.zip"
+	
+	test.resultRoot   = "Scripts/Results/${env.BUILD_NUMBER}"
+	test.resultFile   = "${test.resultRoot}/${test.name}.jtl"
+	test.reportFolder = "${test.resultRoot}/${test.name}_HTML
+	test.zipFile      = "${test.resultRoot}/${test.name}.zip"
+	
     }
 }
 
+def generateReports(def tests) {
+
+    tests.each { test ->
+
+       if (fileExists("Jmeter/${test.resultFile}") &&
+    sh(script: "test -s Jmeter/${test.resultFile}", returnStatus: true) == 0)) {
+
+            generateHtml(
+                test.resultFile,
+                test.reportFolder
+            )
+
+        } else {
+
+            echo "WARNING : ${test.resultFile} not found. Skipping HTML generation."
+        }
+    }
+}
+
+def zipReports(def tests) {
+
+    tests.each { test ->
+
+        if (fileExists("Jmeter/${test.reportFolder}/index.html")) {
+
+            zipReport(
+                test.reportFolder,
+                test.zipFile
+            )
+
+        } else {
+
+            echo "WARNING : ${test.reportFolder} not found. Skipping ZIP."
+        }
+    }
+}
 
 def generateHtml(String resultFile, String reportFolder) {
 
