@@ -76,6 +76,16 @@ def readTestConfiguration(String testType) {
     return tests
 }
 
+def prepareTestArtifacts(def tests) {
+
+    tests.each { test ->
+
+        test.resultFile   = "Scripts/Results/${test.name}.jtl"
+        test.reportFolder = "Scripts/Results/${test.name}_HTML"
+        test.zipFile      = "Scripts/Results/${test.name}.zip"
+    }
+}
+
 def generateHtml(String resultFile, String reportFolder) {
 
     echo "Generating HTML Report : ${reportFolder}"
