@@ -36,20 +36,22 @@ def readTestConfiguration(String testType) {
 
     def props = [:]
 
-config.split('\n').each { line ->
+    def lines = config.split("\\r?\\n")
 
-    line = line.trim()
+    for (String line : lines) {
 
-    if (!line || line.startsWith("#")) {
-        return
+        line = line.trim()
+
+        if (line == "" || line.startsWith("#")) {
+            continue
+        }
+
+        def parts = line.split("=", 2)
+
+        if (parts.length == 2) {
+            props[parts[0].trim()] = parts[1].trim()
+        }
     }
-
-    def parts = line.split("=",2)
-
-    if(parts.size()==2){
-        props[parts[0].trim()] = parts[1].trim()
-    }
-}
 
     def testList = props[testType]
 
@@ -59,7 +61,7 @@ config.split('\n').each { line ->
 
     def tests = []
 
-    testList.split(",").each { name ->
+    for (String name : testList.split(",")) {
 
         name = name.trim()
 
@@ -73,5 +75,4 @@ config.split('\n').each { line ->
 
     return tests
 }
-
 return this
