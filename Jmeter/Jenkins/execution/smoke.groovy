@@ -18,6 +18,14 @@ tests.each { test ->
             test.script,
             "Scripts/Results/${test.name}.jtl"
         )
+ 	engine.generateHtml(
+        resultFile,
+        reportFolder
+    )
+   engine.zipReport
+     (
+	 test.reportFolder,
+        test.zipFile
     }
 }
 

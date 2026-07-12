@@ -75,4 +75,31 @@ def readTestConfiguration(String testType) {
 
     return tests
 }
+
+def generateHtml(String resultFile, String reportFolder) {
+
+    echo "Generating HTML Report : ${reportFolder}"
+
+    sh """
+        cd Jmeter
+
+        rm -rf ${reportFolder}
+
+        jmeter \
+        -g ${resultFile} \
+        -o ${reportFolder}
+    """
+}
+
+def zipReport(String reportFolder, String zipFile) {
+
+    sh """
+        cd Jmeter
+
+        rm -f ${zipFile}
+
+        zip -r ${zipFile} ${reportFolder}
+    """
+}
+
 return this
