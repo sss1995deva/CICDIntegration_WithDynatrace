@@ -1,7 +1,10 @@
 def execute() {
+
+    def common = load 'Jmeter/Jenkins/common.groovy'
+
+    common.prepareWorkspace()
+
     echo "========== SMOKE STRATEGY =========="
-    echo "Running Smoke Test..."
-    echo "===================================="
 }
 
 return this
