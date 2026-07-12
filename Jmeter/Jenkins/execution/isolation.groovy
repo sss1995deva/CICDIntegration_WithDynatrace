@@ -4,13 +4,11 @@ def execute() {
 
     engine.prepareWorkspace()
 
-    def tests = engine.readTestConfiguration(params.TEST_TYPE)
-
-    def branches = [:]
+    def tests = engine.readTestConfiguration(params.TEST_TYPE)    
 
 tests.each { test ->
 
-    branches[test.name] = {
+   
 
         test.resultFile   = "Scripts/Results/${test.name}.jtl"
         test.reportFolder = "Scripts/Results/${test.name}_HTML"
@@ -31,8 +29,7 @@ tests.each { test ->
         engine.zipReport(
             test.reportFolder,
             test.zipFile
-        )
-    }
+        )    
 }
 
 }
